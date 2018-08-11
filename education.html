@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AmbujEducation</title>
+<link rel = "icon" type = "image/png" href = "pics/icon.png">
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<style>
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+#all{
+   
+	 background: url(pics/sunset.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+	text-decoration: none;
+	background-attachment: fixed;
+	
+	
+	
+	
+	
+}
+
+.h{
+text-align:center;
+display: block;
+    color: SpringGreen;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+
+}
+
+
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#g {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.active {
+    background-color:#4CAF50;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div id="all" >
+
+
+<div id="g" class="topnav">
+<ul>
+  <li>   
+  <a  href="home.html">ABOUT</a><li>
+  <li><a class="active" href="education.html">EDUCATION</a><li>
+  <li><a href="skill.html">SKILLS</a><li>
+  <li><a href="interest.html">INTERESTS</a><li>
+  <li><a href="awards.html">AWARDS</a><li>
+  <li><a href="gallery.html" >GALLERY</a><li>
+  <li style="float:right;"><a href="contacts.html">CONTACTS</a><li>
+ </ul>
+ 
+ 
+</div>
+
+
+
+
+
+
+<h1 style="font-size:50px;text-decoration:underline; color:Yellow;" class="h" >Education</h1>
+<h1 class="h" style="font-size:40px;color:Lime;" >National Institute of Technology Delhi</h1>
+
+<h2 class="h" >Bachelor of Technology</h2>
+
+<h2 class="h" >Electrical & Electronics Engineering</h2>
+
+<h2 class="h" >GPA: --</h2>
+<p class="h"  >August 2017 - Present</p>
+
+<br>
+<h1 class="h" style="font-size:35px;color:Lime;"> Saraswati Vidya Mandir Majhwara;Sultanpur</h1>
+<h2 class="h" >Intermediate</h2>
+<h2 class="h" >Percentage: 92.2</h2>
+<p class="h" >July 2014 - March 2016</p>
+<br>
+<br>
+<h1 class="h" style="font-size:35px;color:Lime;"> Saraswati Vidya Mandir Majhwara;Sultanpur</h1>
+<h2 class="h" >High School</h2>
+<h2 class="h" >Percentage: 90.67</h2>
+<p class="h" >July 2013 - March 2014</p>
+</br>
+</br>
+
+</div>
+
+
+
+
+</body>
+
+
+
+</html>

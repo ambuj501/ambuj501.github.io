@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AmbujSkill</title>
+<link rel = "icon" type = "image/png" href = "pics/icon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+#all{
+   background:url(pics/p3.jpeg);
+	background-color:gray;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+	text-decoration: none;
+	background-attachment: fixed;
+	text-align:center;
+	
+	}
+	
+	
+	
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#g {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.active {
+    background-color:#4CAF50;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.h{
+color:pink;}
+
+</style>
+</head>
+<body>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div id="all">
+
+
+
+<div id="g" class="topnav">
+<ul>
+  <li>   
+  <a href="home.html">ABOUT</a><li>
+  <li><a href="education.html">EDUCATION</a><li>
+  <li><a class="active" href="skill.html">SKILLS</a><li>
+  <li><a href="interest.html">INTERESTS</a><li>
+  <li><a href="awards.html">AWARDS</a><li>
+  <li><a href="gallery.html" >GALLERY</a><li>
+  <li style="float:right;"><a href="contacts.html">CONTACTS</a><li>
+ </ul>
+ 
+ 
+</div>
+
+
+
+
+
+
+
+<h1 style="font-size:50px;text-decoration:underline; color:DarkOrange;">Skills</h1>
+<h1 class="h" >Programming Languages</h1>
+<div  style="text-align:left;font-family:comic sans ms;font-style:italic;padding-left:450px;color:yellow;">
+<p>  • C</p>
+<p>  • C++</p>
+<p>  • JavaScript</p>
+<p>  • JQuery</p>
+<p>  • PHP</p>
+<p>  • MySQL</p>
+<p>  • Python</p>
+</div>
+
+
+
+<h1 class="h" >Web Development & Tools</h1>
+<div  style="text-align:left;font-family:comic sans ms;font-style:italic;padding-left:450px;color:yellow;">
+<p>  • HTML5</p>
+<p>  • CSS</p>
+<p>  • Bootstrap</p>
+<p>  • Django</p>
+</div>
+
+
+
+<h1 class="h" >Softwares</h1>
+<div  style="text-align:left;font-family:comic sans ms;font-style:italic;padding-left:450px;color:yellow;">
+<p>  • MATLAB</p>
+<p>  • AutoCAD</p>
+</div>
+
+
+<h1 class="h" >Platforms</h1>
+<div  style="text-align:left;font-family:comic sans ms;font-style:italic;padding-left:450px;color:yellow;">
+<p>  • Windows</p>
+<p>  • Linus</p>
+<p>  • Ubuntu</p>
+<p>  • Android</p>
+</div>
+
+
+<h1  class="h" >Languages Known</h1>
+<div  style="text-align:left;font-family:comic sans ms;font-style:italic;padding-left:450px;color:yellow;">
+<p>  • Hindi</p>
+<p>  • English</p>
+<p>  • Sanskrit</p>
+<p>  • Bhojpuri</p>
+<p>  • Awadhi</p>
+</div>
+
+
+<br>
+<br>
+
+
+
+
+</div>
+</body>
+</html>

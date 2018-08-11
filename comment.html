@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AmbujMishra</title>
+<link rel = "icon" type = "image/png" href = "pics/icon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#g {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.active {
+    background-color: #FF00FF;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+#form-div
+{
+	position:relative;
+
+	width:80%;
+	background-color:LightGreen;
+	padding:50px;
+	left:30px;
+	
+}
+#form-div div
+{
+	margin:10px;
+}
+input,select
+{
+	display:block;
+	width:70%;
+	padding:10px;
+	border-radius:4px;
+	background-color:khaki;
+}
+.name
+{
+	width:93%;
+
+	
+}
+
+
+
+
+#butn{
+	background-color:greenyellow;
+	width:20%;
+	height:50px;
+	right:0px;
+	
+	
+}
+
+#butn1{
+	background-color:greenyellow;
+	width:20%;
+	height:50px;
+	left:0px;
+}
+
+
+#cmt{
+background-color:Khaki;}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+</head>
+ 
+<body>
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+
+
+<div id="form-div">
+
+
+
+
+
+<div id="g" class="topnav">
+<ul>
+  <li>   
+  <a href="home.html">ABOUT</a><li>
+  <li><a href="education.html">EDUCATION</a><li>
+  <li><a href="skill.html">SKILLS</a><li>
+  <li><a href="interest.html">INTERESTS</a><li>
+  <li><a href="awards.html">AWARDS</a><li>
+  <li><a href="gallery.html" >GALLERY</a><li>
+  <li style="float:right;"><a href="contacts.html">CONTACTS</a><li>
+ </ul>
+ 
+ 
+</div>
+
+
+
+
+<h1 style="text-align:center;">Comments</h1>
+
+
+
+<form action="comment.php" method="post" enctype="multipart/form-data" >
+<div class="name">
+</br>
+First Name:*</br>
+<input type="text" name="Fname" placeholder="First Name" maxlength="10"  autofocus required ><br/>
+
+Middle Name:</br>
+<input type="text" name="Mname" placeholder="Middle Name" maxlength="10" ><br/>
+
+Last Name:*</br>
+<input type="text" name="Lname" placeholder="Last Name" maxlength="10"  required ><br/>
+
+Email id:*</br>
+<input type="email" name="Email" placeholder="ex:abc@gmail.com"   required ><br/>
+
+Gender:*<br>
+<input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+
+
+</div>
+<div class="name">
+<h5 style="font-size:20px;">comments:*</h5><br>
+<textarea   name="msg"  id="cmt" rows="5" cols="77" placeholder="Enter comments here..." required=""  style="resize:none;"></textarea>
+
+</div>
+
+
+
+
+
+
+
+</br>
+</br>
+
+<button id="butn" type="submit"  ><strong>Submit</strong></button>
+<button id="butn1" type="reset"  ><strong>Reset</strong></button>
+
+
+
+
+
+
+
+
+</form>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AmbujMishra</title>
+<link rel = "icon" type = "image/png" href = "pics/icon.png">
+
+<link rel="stylesheet" type="text/css" href="homecss.css">
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="header">
+  <h1 style="color:black; text-shadow:3px 2px 2px red;">Ambuj Mishra</h1>
+ <h3  style="color:red;">National Institute of Technology Delhi</h3>
+ 
+</div>
+
+<div id="g" class="topnav">
+<ul>
+  <li>   
+  <a class="active" href="#">ABOUT</a><li>
+  <li><a href="education.html">EDUCATION</a><li>
+  <li><a href="skill.html">SKILLS</a><li>
+  <li><a href="interest.html">INTERESTS</a><li>
+  <li><a href="awards.html">AWARDS</a><li>
+  <li><a href="gallery.html" >GALLERY</a><li>
+  <li style="float:right;"><a href="contacts.html">CONTACTS</a><li>
+ </ul>
+</div>
+
+<div class="row">
+  <div  class="leftcolumn">
+    <div  id="c" class="card">
+      <h2>ABOUT ME</h2>
+      <img src="pics/nit.jpg" style="height:200px;"/>
+      <p style="font-style:italic;" >Hey! I am <strong>AMBUJ MISHRA</strong>  and am currently a sophomore at <strong>NIT Delhi</strong> pursuing my  Engineering in ELECTRICAL AND ELECTRONICS ENGINEERING .</p>
+	 
+    </div>
+    <div style="background-color:LightCyan;" class="card">
+      <h5>address..</h5>
+      <img style="right:20px;" src="pics/allahabad.jpg" height="220px" width="85%";/>
+            <p style="font-style:oblique;">I come from the beautiful city of <strong>Sultanpur</strong> located  near about Religious city <strong>ALLAHABAD</strong>.
+			I absolutely love swimming and you could easily find me on the Beach of confluence of <strong>PRAYAG</strong> in Summer vacation. Apart from that, I am a huge foodie and have explored a plethora of cuisines till date.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div id="n" class="card">
+      <h5>Most IMP</h5>
+      <img class="rim" src="pics/alld.jpg" alt="Avatar" height="250" />
+      <p>I am a computer enthusiast</p>
+    </div>
+    <div style="background-color:PaleGreen;" class="card">
+      <h3>Popular Post</h3>
+      
+      <img class="rim" src="pics/ambuj.jpg" height="250"  alt="Avatar" width="92%"/>
+	  <P>&copy: Ambuj Mishra NIT Delhi</p>
+    </div>
+    
+  </div>
+</div>
+
+<div style="background-color:GreenYellow; height:100px;">
+  <a href="comment.html"><h1 style="text-align:center; top:20px;">Click Here</h1></a>
+  <h3 style="text-align:center">for <strong>Comments and Feedbacks</strong></h3>
+</div>
+
+</body>
+</html>

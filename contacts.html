@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AmbujContacts</title>
+<link rel = "icon" type = "image/png" href = "pics/icon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<style>
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+body{
+   background:url(pics/p1.jpeg);
+	background-color:gray;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+	text-decoration: none;
+	background-attachment: fixed;
+/*text-align:center;*/	
+	}
+#all{
+margin:20px;}
+	
+	
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:Fuchsia;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#g {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.active {
+    background-color:#4CAF50;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+
+
+#icon {
+text-align:center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div id="all">
+<div id="g" class="topnav">
+<ul>
+  <li>   
+  <a  href="home.html">ABOUT</a><li>
+  <li><a href="education.html">EDUCATION</a><li>
+  <li><a href="skill.html">SKILLS</a><li>
+  <li><a href="interest.html">INTERESTS</a><li>
+  <li><a href="awards.html">AWARDS</a><li>
+  <li><a href="gallery.html" >GALLERY</a><li>
+  <li  class="active" style="float:right;"><a href="contacts.html">CONTACTS</a><li>
+ </ul>
+ </div>
+ 
+ <h1 style="font-size:40px;text-decoration:underline;color:pink;text-align:center;">Contact Info</h1>
+ <h4 style="font-size:20px;color:yellow;text-align:center;letter-spacing:1.5px;">Village and Post-AGAI,KURWAR,SULTANPUR</h4>
+ <h4 style="font-size:20px;color:yellow;text-align:center;letter-spacing:1.5px;">Utter Pradesh</h4>
+ <h4 style="font-size:20px;color:yellow;text-align:center;letter-spacing:1.5px;">pin-code:228121</h4>
+ <h4 style="font-size:20px;color:yellow;text-align:center;letter-spacing:1.5px;">+91 9889055776</h4>
+ 
+ <div id="icon">
+ <a href="https://www.facebook.com/MishraAmbuj7784" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://ambuj-mishra.github.io/" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/ambuj-kumar-91b553157/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/channel/UC9Ai0QIwayXGbqrM-cgsitw" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/ambuj501/" class="fa fa-instagram"></a>
+
+ </div>
+
+
+</div>
+
+
+
+</body>
+</html>

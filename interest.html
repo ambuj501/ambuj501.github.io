@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AmbujInterest</title>
+<link rel = "icon" type = "image/png" href = "pics/icon.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<style>
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+body{
+   background:url(pics/p2.jpeg);
+	background-color:gray;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+	text-decoration: none;
+	background-attachment: fixed;
+/*text-align:center;*/	
+	}
+#all{
+margin:20px;}
+	
+	
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#g {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.active {
+    background-color:#4CAF50;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div id="all">
+<div id="g" class="topnav">
+<ul>
+  <li>   
+  <a href="home.html">ABOUT</a><li>
+  <li><a href="education.html">EDUCATION</a><li>
+  <li><a href="skill.html">SKILLS</a><li>
+  <li><a class="active" href="interest.html">INTERESTS</a><li>
+  <li><a href="awards.html">AWARDS</a><li>
+  <li><a href="gallery.html" >GALLERY</a><li>
+  <li style="float:right;"><a href="contacts.html">CONTACTS</a><li>
+ </ul>
+ </div>
+ <h1 style="text-align:center;font-size:60px;color:Magenta;text-decoration:underline;">Interests</h1>
+<div style="font-family:comic sans ms;font-style:italic;padding-left:80px;color:GreenYellow; font-size:30px;">
+
+
+<p>• I enjoy my outdoor time playing Cricket ,Badminton and with friends.</p>
+<p>• I'm an ardent Cricket fan.</p>
+<p>• Indoors, I follow a number of sci-fi and fantasy genre movies and television shows, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end as well as back-end web development world.</p>
+<p>• I am fascinated by the field of Artificial Intelligence.Currently I'm exploring<br>  the field of Machine Learning and Deep Learning methods as applied to Computer Vision problems</p>
+<p>• One of the life principles that I follow is the one given by Napoleon Hill: " If<br>  you cannot do great things, do small things in a great way."</p>
+<p>• Sometimes, I also write about my experiences and learnings on Quora an Medium</p>
+<p>• Driving Motorbike is my favorite one!</p>
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
