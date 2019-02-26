@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
-<title>AmbujGallery</title>
-<link rel = "icon" type = "image/png" href = "pics/icon.png">
-
+<head>
+<title>AmbujMishra</title>
+<link rel = "icon" type = "image/png" href = "images/icon.png">
+ <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+<script  type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 <script>
-
-
-
-
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -28,396 +24,68 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-}
-
-
-
-
-function scrollWin() {
-    window.scrollBy(0, 9000);
-}
-
-
 </script>
 
 
-<style>
 
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
 
-#myBtn:hover {
-  background-color: #555;
-}
 
+</head>
 
-body{
-   /* background:url(pics/sunset.jpg);*/
-	background-color:gray;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-	position: -webkit-sticky; /* Safari */
-    position: sticky;
-	text-decoration: none;
-	background-attachment: fixed;
-/*text-align:center;*/	
-	}
-#all{
-margin:20px;}
-	
-	
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-}
 
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-#g {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-.active {
-    background-color:#4CAF50;
-}
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Style the images inside the grid */
-.column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-}
-
-.column img:hover {
-    opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* The expanding image container */
-.container {
-    position: relative;
-    display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    color:Black;
-	font-size:60px;
-	text-shadow:3px 2px 2px red;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: white;
-	text-shadow:3px 2px 2px pink;
-    font-size: 70px;
-    cursor: pointer;
-	
-}
-
-
-
-
-
-
-
-
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial;
-}
-
-.header {
-    text-align: center;
-    padding: 32px;
-}
-
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-</style>
 <body>
+<h1>The Memories Collection</h1>
 
-
+<a href="index.html"><button  class="button"><span >ABOUT </span></button></a>
+<a href="education.html"> <button  class="button"><span>EDUCATION </span></button></a>
+<a href="skill.html"><button  class="button"><span>SKILLS </span></button></a>
+<a href="interest.html"><button  class="button"><span>INTERESTS </span></button></a>
+<a href="awards.html"><button  class="button"><span>AWARDS </span></button></a>
+<a href="contacts.html"><button  class="button"><span>CONTACTS </span></button></a>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<div id="all">
-
-<div id="g" class="topnav">
-
-<ul>
-  <li>   
-  <a href="index.html">ABOUT</a><li>
-  <li><a href="education.html">EDUCATION</a><li>
-  <li><a href="skill.html">SKILLS</a><li>
-  <li><a href="interest.html">INTERESTS</a><li>
-  <li><a href="awards.html">AWARDS</a><li>
-  <li><a class="active" href="gallery.html" >GALLERY</a><li>
-  <li style="float:right;"><a href="contacts.html">CONTACTS</a><li>
- </ul>
-  </div>
 
 
 
 
-<!-- Page content -->
-<div class="row">
-  <div class="column">
-    <img src="pics/alld.jpg" alt="Ambuj Mishra at Home" style="width:250px;height:250px;"onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m2.jpg" alt="My most lovely younger brother" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m3.jpg" alt="My most precious gift of God:MOM" style="width:250px;height:250px" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m4.jpeg" alt="My Soul:Gaurav" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
+
+
+
+
+
+
+
+<div class="gallery">
+<a href="images/1.jpg"   data-lightbox="mygallery" data-title="Ambuj mishra With Uncle in Pune" > <img style="width:250px;height:250px;" class="column" src="images/1.jpg"></a>
+<a href="images/m3.jpg" data-lightbox="mygallery" data-title="The most Precious gift of God :MOM" ><img class="column" style="width:250px;height:250px;" src="images/m3.jpg"></a>
+<a href="images/2.jpg" data-lightbox="mygallery" data-title="Enjoy in MNNIT Allahabad " ><img class="column" style="width:250px;height:250px;" src="images/2.jpg"></a>
+<a href="images/3.jpg" data-lightbox="mygallery" data-title="In Amrit Sukhdev" ><img class="column" style="width:250px;height:250px;" src="images/3.jpg"></a>
+<a href="images/4.jpg" data-lightbox="mygallery" data-title="With Flatemate PK"><img  class="column" style="width:250px;height:250px;" src="images/4.jpg"></a>
+<a href="images/5.jpg" data-lightbox="mygallery" data-title="NITD Squad"><img class="column" style="width:250px;height:250px;" src="images/5.jpg"></a>
+<a href="images/6.jpg" data-lightbox="mygallery" data-title="Me and PK"><img class="column" style="width:250px;height:250px;" src="images/6.jpg"></a>
+<a href="images/7.jpg" data-lightbox="mygallery" data-title="Ambuj Mishra with PK and HMT" ><img class="column" style="width:250px;height:250px;" src="images/7.jpg"></a>
+<a href="images/8.jpg" data-lightbox="mygallery" data-title="Lohri Celebration With Prof's"><img class="column" style="width:250px;height:250px;" src="images/8.jpg"></a>
+<a href="images/9.jpg" data-lightbox="mygallery" data-title="Me and CA (green city Bhabhua)"><img class="column" style="width:250px;height:250px;" src="images/9.jpg"></a>
+<a href="images/m17.jpg" data-lightbox="mygallery" data-title="My DAD With Amarjeet"><img class="column" style="width:250px;height:250px;" src="images/m17.jpg"></a>
+<a href="images/alld2.jpg" data-lightbox="mygallery" data-title="My most lovely younger brother (Adarsh Mishra) "><img class="column" style="width:250px;height:250px;" src="images/alld.jpg"></a>
+<a href="images/m1.jpg" data-lightbox="mygallery" data-title="Agai (Born Place)"><img class="column" style="width:250px;height:250px;" src="images/m1.jpg"></a>
+<a href="images/m4.jpeg" data-lightbox="mygallery" data-title="My Soul (Gaurav Mishra)"><img class="column" style="width:250px;height:250px;" src="images/m4.jpeg"></a>
+<a href="images/m5.jpg" data-lightbox="mygallery" data-title="Me in NIT Delhi"><img class="column" style="width:250px;height:250px;" src="images/m5.jpg"></a>
+<a href="images/m6.jpg" data-lightbox="mygallery" data-title="My Uncle got best Teaching Awards 2018 #RCM Gujrati School"><img class="column" style="width:250px;height:250px;" src="images/m6.jpg"></a>
+<a href="images/m7.jpg" data-lightbox="mygallery" data-title="My Cute Nephew"><img class="column" style="width:250px;height:250px;" src="images/m7.jpg"></a>
+<a href="images/m8.jpg" data-lightbox="mygallery" data-title="Me in NIT Delhi"><img class="column" style="width:250px;height:250px;" src="images/m8.jpg"></a>
+<a href="images/m9.jpg" data-lightbox="mygallery" data-title="Me in NIT Delhi"><img class="column" style="width:250px;height:250px;" src="images/m9.jpg"></a>
+<a href="images/m10.jpg" data-lightbox="mygallery" data-title="Gaurav Mishra"><img class="column" style="width:250px;height:250px;" src="images/m10.jpg"></a>
+<a href="images/m11.jpg" data-lightbox="mygallery" data-title="My Guide (Aniket Pathak)"><img class="column" style="width:250px;height:250px;" src="images/m11.jpg"></a>
+<a href="images/m12.jpg" data-lightbox="mygallery" data-title="My Random click"><img class="column" style="width:250px;height:250px;" src="images/m12.jpg"></a>
+<a href="images/m13.jpg" data-lightbox="mygallery" data-title="Winner Award"><img class="column" style="width:250px;height:250px;" src="images/m13.jpg"></a>
+<a href="images/m14.jpg" data-lightbox="mygallery" data-title="Blood Donation"><img class="column" style="width:250px;height:250px;" src="images/m14.jpg"></a>
+<a href="images/m15.jpg" data-lightbox="mygallery" data-title="In NIT Delhi"><img class="column" style="width:250px;height:250px;" src="images/m15.jpg"></a>
+<a href="images/m16.jpg" data-lightbox="mygallery" data-title="Yoga Team"><img class="column" style="width:250px;height:250px;" src="images/m16.jpg"></a>
+
+
 </div>
-
-
-
-
-<div class="row">
-  <div class="column">
-    <img src="pics/m5.jpg" alt="Me in NIT Delhi" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img  src="pics/m6.jpg" alt="My Uncle :best teaching award 2017 " style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m7.jpg" alt="My cute Nephe:ARUSH" style="width:250px;height:250px" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m8.jpg" alt="Me:NIT Delhi" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-</div>
-
-<div class="row">
-  <div class="column">
-    <img src="pics/m9.jpg" alt="campus" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m10.jpg" alt="Enjoying in summer vacation" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m11.jpg" alt="My Guide:Aniket Pathak" style="width:250px;height:250px" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m12.jpg" alt="Enjoiny in Campus" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-</div>
-
-
-
-<div class="row">
-  <div class="column">
-    <img src="pics/m13.jpg" alt="Being Awarded:Our Yoga Team" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m14.jpg" alt="Blood Donation " style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m15.jpg" alt="NIT Delhi" style="width:250px;height:250px" onclick="myFunction(this);scrollWin();">
-  </div>
-  <div class="column">
-    <img src="pics/m17.jpg" alt="My Dad with Amarjeet" style="width:250px;height:250px;" onclick="myFunction(this);scrollWin();">
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
-</div>
-
-
-
-<!-- End page content -->
-</div>
-
-
 </body>
+
 </html>
